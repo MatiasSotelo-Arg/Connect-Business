@@ -1,0 +1,32 @@
+@import "variables";
+
+.cont-header {
+    padding: 2rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cont-logo {
+    display: flex;
+
+        img {
+            height: 3rem;
+        }
+
+        h1 {
+            color: $color-letra-titulos;
+            padding-left: 1rem;
+        }
+    }
+    .cont-nav {
+        display: flex;
+        flex-direction: row;
+        a {
+            font-size: 1.3rem;
+            margin: 0 .500rem;
+            color: $color-letra-titulos;
+        }
+    }
+}
+
+
+
