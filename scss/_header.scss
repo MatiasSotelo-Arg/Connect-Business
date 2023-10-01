@@ -7,14 +7,14 @@
     justify-content: space-between;
     .cont-logo {
     display: flex;
-
+        align-items: center;
         img {
             height: 3rem;
         }
 
         h1 {
             color: $color-letra-titulos;
-            padding-left: 1rem;
+            padding-left: 1.2rem;
         }
     }
     .cont-nav {
@@ -24,7 +24,12 @@
             font-size: 1.3rem;
             margin: 0 .500rem;
             color: $color-letra-titulos;
+            font-weight: bold;
         }
+    } 
+    a:hover, 
+    a h1:hover {
+        color: $color-principal;
     }
 }
 

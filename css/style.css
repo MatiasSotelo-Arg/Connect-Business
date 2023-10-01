@@ -15,19 +15,24 @@ li {
   align-items: center;
   justify-content: space-between; }
   .cont-header .cont-logo {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .cont-header .cont-logo img {
       height: 3rem; }
     .cont-header .cont-logo h1 {
       color: #111827;
-      padding-left: 1rem; }
+      padding-left: 1.2rem; }
   .cont-header .cont-nav {
     display: flex;
     flex-direction: row; }
     .cont-header .cont-nav a {
       font-size: 1.3rem;
       margin: 0 .500rem;
-      color: #111827; }
+      color: #111827;
+      font-weight: bold; }
+  .cont-header a:hover,
+  .cont-header a h1:hover {
+    color: #318282; }
 
 .cont-contenido-principal {
   display: grid;
@@ -42,7 +47,8 @@ li {
   .cont-contenido-principal .cont-titulo-1 {
     padding-left: 2rem; }
     .cont-contenido-principal .cont-titulo-1 h1 {
-      font-size: 4.5rem; }
+      font-size: 4.5rem;
+      color: #111827; }
     .cont-contenido-principal .cont-titulo-1 h2 {
       color: #6b7280;
       font-size: 1.25rem;
@@ -65,7 +71,7 @@ li {
         top: 8%;
         z-index: 1; }
     .cont-contenido-principal .cont-titulo-2 .bg-1 {
-      background-color: #f9fafb;
+      background-color: #111827;
       width: 60%;
       min-width: 50%;
       height: 100%;
@@ -81,3 +87,63 @@ li {
     .cont-contenido-principal .cont-titulo-2 .bg-1 {
       border-top-left-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem; }
+
+.cont-info-main {
+  padding-top: 9rem;
+  width: 100vw; }
+  .cont-info-main .info-main {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-bottom: 6rem; }
+    .cont-info-main .info-main .cont-img {
+      width: 670px;
+      max-height: 440px; }
+      .cont-info-main .info-main .cont-img img {
+        width: 100%;
+        max-height: 440px;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem; }
+    .cont-info-main .info-main .cont-img-derecha img {
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem; }
+  .cont-info-main .cont-contenido {
+    width: 50%; }
+    .cont-info-main .cont-contenido h2 {
+      font-size: 2.25rem;
+      line-height: 2.5rem; }
+    .cont-info-main .cont-contenido p {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      max-width: 500px;
+      color: #6b7280;
+      padding-top: 1rem; }
+  .cont-info-main .cont-contenido-derecha {
+    padding-left: 3rem;
+    width: 50%; }
+
+.cont-logo-wpp {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  padding: 0.2rem 0.7rem;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #318282;
+  border: 2px solid #318282; }
+  .cont-logo-wpp h3 {
+    color: #ffffff; }
+  .cont-logo-wpp img {
+    width: 40px;
+    height: 40px; }
+
+.cont-logo-wpp:hover {
+  background-color: rgba(128, 128, 128, 0.163);
+  border: 2px solid #4fb153;
+  border: 2px solid #111827; }
+  .cont-logo-wpp:hover h3 {
+    color: #111827; }
