@@ -63,6 +63,7 @@
             max-width: 65ch;
             font-size: 1rem;
             line-height: 1.75;
+            color: $color-parrafos;
         }
         h2 {
             font-size: 2.25rem;
@@ -76,7 +77,6 @@
     .cont-mkt-galeria {
         display: grid;
         justify-items: center;
-        
         grid-template-columns: repeat(4,1fr);
         margin-top: 4rem;
         width: 100%;
@@ -100,11 +100,8 @@
             p {
                 margin-top: .5rem;
                 line-height: 1.25rem;
+                color: $color-parrafos;
             }
         }
     }
-}
-
-h4, p {
-    color: $color-parrafos;
 }
