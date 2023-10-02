@@ -62,17 +62,49 @@
         }
     }
 }
+// Contenido testimonios 
+.cont-testimonios {
+    background-color: $color-principal;
+    color: $blanco-letra;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 5rem;
+    p {
+        max-width: 48rem;
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .cont-info-testimonio {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+        .testimonios-img {
+            border-color: $blanco-letra;
+            border-width: 2px;
+            border-radius: 50%;
+            border-style: solid;
+            width: 3rem;
+        }
+    }
+    
+
+
+}
 // Seccion info main
 .cont-info-main {
-    padding-top: 9rem;
+    padding-top: 15rem;
     width: 100vw;
     .info-main {
         display: flex;
         align-items: center;
-        gap: 3.5rem;
         margin-bottom: 6rem;
         .cont-img {
-            width: 670px;
+            width: 50%;
             max-height:440px;
             img {
                 width: 100%;
@@ -92,6 +124,7 @@
 
     .cont-contenido {
         width: 50%;
+        padding-left: 4rem;
         h2 {
             font-size: 2.25rem;
             line-height: 2.5rem;
@@ -105,7 +138,6 @@
         }
     }
     .cont-contenido-derecha {
-        padding-left: 3rem;
         width: 50%;
     }
 
@@ -122,10 +154,9 @@
     position: fixed;
     right: 20px;
     bottom: 50px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    // transition: background-color 1s ease;
-    background-color: $color-principal;
-    border: 2px solid $color-principal;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.456);
+    background-color: $color-wpp;
+    border: 2px solid $color-wpp;
     h3 {
         color: $blanco-letra;
     }
@@ -134,12 +165,34 @@
         height: 40px;
     }
 }
+
 .cont-logo-wpp:hover {
-    background-color: rgba(128, 128, 128, 0.163);
-    border: 2px solid #4fb153;
-    border: 2px solid $color-letra-titulos;
+    background-color: rgba(0, 0, 0, 0.175);
+    border: 2px solid $color-wpp; 
     h3 {
-        color: $color-letra-titulos;
+        color: $color-wpp;
     }
 }
 
+// Media query
+// 1500px
+@media screen and (min-width: 1500px) {
+    .cont-img {
+        padding-left: 4rem;
+        img {
+            border-top-left-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+        }
+    }
+    .cont-img-derecha {
+        padding-left: 0;
+        padding-right: 4rem;
+        img {
+            border-top-right-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+        }
+    }
+    .cont-contenido {
+        margin-left: 4rem;   
+    }
+}

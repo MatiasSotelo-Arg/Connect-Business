@@ -34,6 +34,12 @@ li {
   .cont-header a h1:hover {
     color: #318282; }
 
+.activo {
+  border-bottom: 2px solid #318282; }
+
+.activo:hover {
+  border-bottom: 2px solid #111827; }
+
 .cont-contenido-principal {
   display: grid;
   padding-top: 5rem;
@@ -88,16 +94,41 @@ li {
       border-top-left-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem; }
 
+.cont-testimonios {
+  background-color: #318282;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 5rem; }
+  .cont-testimonios p {
+    max-width: 48rem;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: center; }
+  .cont-testimonios .cont-info-testimonio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem; }
+    .cont-testimonios .cont-info-testimonio .testimonios-img {
+      border-color: #ffffff;
+      border-width: 2px;
+      border-radius: 50%;
+      border-style: solid;
+      width: 3rem; }
+
 .cont-info-main {
-  padding-top: 9rem;
+  padding-top: 15rem;
   width: 100vw; }
   .cont-info-main .info-main {
     display: flex;
     align-items: center;
-    gap: 3.5rem;
     margin-bottom: 6rem; }
     .cont-info-main .info-main .cont-img {
-      width: 670px;
+      width: 50%;
       max-height: 440px; }
       .cont-info-main .info-main .cont-img img {
         width: 100%;
@@ -108,7 +139,8 @@ li {
       border-top-left-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem; }
   .cont-info-main .cont-contenido {
-    width: 50%; }
+    width: 50%;
+    padding-left: 4rem; }
     .cont-info-main .cont-contenido h2 {
       font-size: 2.25rem;
       line-height: 2.5rem; }
@@ -119,7 +151,6 @@ li {
       color: #6b7280;
       padding-top: 1rem; }
   .cont-info-main .cont-contenido-derecha {
-    padding-left: 3rem;
     width: 50%; }
 
 .cont-logo-wpp {
@@ -132,9 +163,9 @@ li {
   position: fixed;
   right: 20px;
   bottom: 50px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: #318282;
-  border: 2px solid #318282; }
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.456);
+  background-color: #4fb053;
+  border: 2px solid #4fb053; }
   .cont-logo-wpp h3 {
     color: #ffffff; }
   .cont-logo-wpp img {
@@ -142,8 +173,22 @@ li {
     height: 40px; }
 
 .cont-logo-wpp:hover {
-  background-color: rgba(128, 128, 128, 0.163);
-  border: 2px solid #4fb153;
-  border: 2px solid #111827; }
+  background-color: rgba(0, 0, 0, 0.175);
+  border: 2px solid #4fb053; }
   .cont-logo-wpp:hover h3 {
-    color: #111827; }
+    color: #4fb053; }
+
+@media screen and (min-width: 1500px) {
+  .cont-img {
+    padding-left: 4rem; }
+    .cont-img img {
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem; }
+  .cont-img-derecha {
+    padding-left: 0;
+    padding-right: 4rem; }
+    .cont-img-derecha img {
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem; }
+  .cont-contenido {
+    margin-left: 4rem; } }
