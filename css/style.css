@@ -278,3 +278,58 @@ li {
         margin-top: .5rem;
         line-height: 1.25rem;
         color: #6b7280; }
+      .cont-mkt .cont-mkt-galeria .galeria-contenido img {
+        object-fit: cover; }
+
+.cont-info-servicios {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem; }
+  .cont-info-servicios .cont-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .cont-info-servicios .cont-left .cont-info-header {
+      border-bottom: 1px solid #e5e7eb;
+      padding-right: 2rem; }
+      .cont-info-servicios .cont-left .cont-info-header p {
+        color: #6b7280;
+        font-weight: 500; }
+      .cont-info-servicios .cont-left .cont-info-header h2 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        padding-bottom: 2.5rem;
+        font-weight: 700;
+        margin-top: .5rem; }
+    .cont-info-servicios .cont-left .cont-left-info {
+      margin-top: 2.5rem; }
+      .cont-info-servicios .cont-left .cont-left-info dd {
+        font-size: .875rem;
+        margin-top: .75rem;
+        color: #6b7280;
+        max-width: 520px; }
+  .cont-info-servicios .cont-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .cont-info-servicios .cont-right .cont-img-1 {
+      width: 592px;
+      height: 592px; }
+      .cont-info-servicios .cont-right .cont-img-1 .img-1 {
+        width: 100%;
+        height: 100%; }
+    .cont-info-servicios .cont-right .cont-img-2 {
+      display: flex;
+      gap: 2rem; }
+      .cont-info-servicios .cont-right .cont-img-2 .img-2 {
+        width: 280px;
+        height: 100%; }
+      .cont-info-servicios .cont-right .cont-img-2 .img-3 {
+        width: 280px;
+        height: 100%; }
+    .cont-info-servicios .cont-right img {
+      border-radius: .5rem;
+      object-fit: cover; }
+
+.cont-info-servicios, .cont-mkt {
+  max-width: 1200px; }
