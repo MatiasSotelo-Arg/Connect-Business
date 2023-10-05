@@ -334,7 +334,10 @@ li {
 .cont-info-servicios, .cont-mkt {
   max-width: 1200px; }
 
-.cont-principal-nosotros {
+main {
+  overflow-x: hidden; }
+
+.principal-nosotros {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -342,30 +345,57 @@ li {
   position: relative;
   width: 100%;
   text-align: center; }
-  .cont-principal-nosotros .bg-nosotros-1 {
+  .principal-nosotros .bg-nosotros-1 {
     position: absolute;
     bottom: -20px;
     left: -100px; }
-  .cont-principal-nosotros .cont-nosotros-info h1 {
+  .principal-nosotros .cont-nosotros-info h1 {
     font-size: 3.75rem;
     line-height: 1;
     color: #111827; }
-  .cont-principal-nosotros .cont-nosotros-info .nosotros-txt {
+  .principal-nosotros .cont-nosotros-info .nosotros-txt {
     margin-top: 1.5rem; }
-    .cont-principal-nosotros .cont-nosotros-info .nosotros-txt p {
+    .principal-nosotros .cont-nosotros-info .nosotros-txt p {
       margin-bottom: 1.25em;
       line-height: 2rem;
       max-width: 672px;
       color: #374151; }
-  .cont-principal-nosotros .bg-nosotros-2 {
+  .principal-nosotros .bg-nosotros-2 {
     position: absolute;
     top: 20px;
     right: -100px; }
 
 .cont-global {
-  margin-top: 9rem; }
-  .cont-global .global-info div h1 {
-    margin-bottom: .8em;
-    font-weight: 800;
-    font-size: 2.25em;
-    color: #111827; }
+  margin-block: 9rem; }
+  .cont-global .global-info {
+    display: flex;
+    padding-bottom: 2rem;
+    gap: 2rem; }
+    .cont-global .global-info .cont-info {
+      width: 50%;
+      margin: auto; }
+      .cont-global .global-info .cont-info h1 {
+        margin-bottom: .8em;
+        font-weight: 800;
+        font-size: 2.25em;
+        color: #111827; }
+    .cont-global .global-info .cont-img-info {
+      width: 50%; }
+      .cont-global .global-info .cont-img-info img {
+        width: 100%; }
+  .cont-global .global-imagenes {
+    display: inline-flex;
+    gap: 2rem; }
+    .cont-global .global-imagenes img {
+      width: 33.33%; }
+  .cont-global img {
+    border-radius: 1rem; }
+
+.cont-principal-nosotros .cont-global,
+.cont-principal-nosotros .cont-nosotros-info-2 {
+  padding-inline: 10rem; }
+
+.cont-principal-nosotros p {
+  max-width: 32rem;
+  line-height: 2rem;
+  color: #374151; }

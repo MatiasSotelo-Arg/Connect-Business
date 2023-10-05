@@ -1,4 +1,8 @@
-.cont-principal-nosotros {
+main {
+    overflow-x: hidden;
+}
+
+.principal-nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,16 +42,59 @@
 
 // Global
 .cont-global {
-    margin-top: 9rem;
+    margin-block: 9rem;
     .global-info {
-        div {
+        display: flex;
+        padding-bottom: 2rem;
+        gap: 2rem;
+        .cont-info {
+            width: 50%;
+            margin: auto;
             h1 {
                 margin-bottom: .8em;
                 font-weight: 800;
                 font-size: 2.25em;
                 color: $color-letra-titulos;
             } 
+   
         }
-       
+        
+        .cont-img-info {
+                width: 50%;
+            img {
+               width: 100%; 
+            }
+        }
+    }
+
+    .global-imagenes {
+        display: inline-flex;
+        gap: 2rem;
+        img {
+            width: 33.33%;
+        }
+    }
+
+    img {
+        border-radius: 1rem;
     }
 }
+
+.cont-nosotros-info-2 {
+  
+}
+
+.cont-principal-nosotros {
+    .cont-global,
+    .cont-nosotros-info-2 {
+        padding-inline: 10rem;
+    }
+
+    p {
+        max-width: 32rem;
+        line-height: 2rem;
+        color: $color-parrafos-2;
+    }
+}
+
+
